@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Appliance Control</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Home Appliance Control</h1>
+        </header>
+        <main>
+            <div class="appliance-list">
+                <div class="appliance" id="fan">
+                    <h2>Fan</h2>
+                    <button class="control-button" onclick="toggleAppliance('fan')">ON/OFF</button>
+                    <input type="range" min="1" max="5" value="3" class="slider" id="fanSpeed">
+                    <label for="fanSpeed">Speed</label>
+                </div>
+                <div class="appliance" id="ac">
+                    <h2>Air Conditioner</h2>
+                    <button class="control-button" onclick="toggleAppliance('ac')">ON/OFF</button>
+                    <input type="range" min="16" max="30" value="22" class="slider" id="acTemp">
+                    <label for="acTemp">Temperature</label>
+                </div>
+                <div class="appliance" id="lights">
+                    <h2>Lights</h2>
+                    <button class="control-button" onclick="toggleAppliance('lights')">ON/OFF</button>
+                    <input type="range" min="1" max="100" value="50" class="slider" id="lightBrightness">
+                    <label for="lightBrightness">Brightness</label>
+                    <input type="color" id="lightColor" name="lightColor" value="#ffffff">
+                    <label for="lightColor">Color</label>
+                </div>
+                <div class="appliance" id="tv">
+                    <h2>TV</h2>
+                    <button class="control-button" onclick="toggleAppliance('tv')">ON/OFF</button>
+                </div>
+            </div>
+        </main>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
